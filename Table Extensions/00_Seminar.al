@@ -149,7 +149,7 @@ table 123456701 "CSD Seminar"
         "Last Date Modified" := Today;
     end;
 
-    procedure AssistEditr():Boolean;
+    procedure AssistEdit():Boolean;
     begin
       with Seminar do begin
         Seminar := Rec;
