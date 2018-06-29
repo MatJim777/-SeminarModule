@@ -1,7 +1,10 @@
 table 123456704 "CSD Seminar Comment Line"
 //CSD1.00 20180628 MJJ
 {
+    Caption = 'Seminar Comment Line';
     DataClassification = ToBeClassified;
+    LookupPageId = "CSD Seminar Comment List";
+    DrillDownPageId = "CSD Seminar Comment List";
 
     fields
     {
@@ -9,7 +12,6 @@ table 123456704 "CSD Seminar Comment Line"
         {
             OptionMembers = "Seminar", "Seminar Registration Header", "Posted Seminar Reg. Header";
             OptionCaption = 'Seminar", Seminar Registration Header, Posted Seminar Reg. Header';
-            DataClassification = ToBeClassified;
         }
         field(20; "Document Line No."; Integer)
         {
@@ -17,18 +19,24 @@ table 123456704 "CSD Seminar Comment Line"
         }
         field(30; "No."; Code[20])
         {
-            TableRelation = if("Table Name" = const("Seminar"))"CSD Seminar";       
+            Caption = 'No.';
+            TableRelation = if("Table Name" = const ("Seminar")) "CSD Seminar";
         }
-        field(40;"Line No.";Integer){
-            
+        field(40; "Line No."; Integer)
+        {
+            Caption = 'Line No.';
         }
-        field(50;"Date";Date){
+        field(50; "Date"; Date)
+        {
+            Caption = 'Date';
 
         }
-        field(60;"Code";Code[10]){
-
+        field(60; "Code"; Code[10])
+        {
+            Caption = 'Code';
         }
-        field(70;"Comment";text[80]){
+        field(70; "Comment"; text[80])
+        {
 
         }
     }
