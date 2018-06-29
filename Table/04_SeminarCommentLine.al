@@ -1,4 +1,4 @@
-table 132456704 "CSD Seminar Comment Line"
+table 123456704 "CSD Seminar Comment Line"
 //CSD1.00 20180628 MJJ
 {
     DataClassification = ToBeClassified;
