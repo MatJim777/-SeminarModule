@@ -17,15 +17,15 @@ table 123456700 "CSD Seminar Setup"
             TableRelation = "No. Series";
             DataClassification = ToBeClassified;
         }
-        field(30;"Seminar Registration Nos";Code[20])
+        field(30;"Seminar Registration Nos.";Code[20])
         {
-            Caption = 'Seminar Registration Nos';
+            Caption = 'Seminar Registration Nos.';
             TableRelation = "No. Series";
             DataClassification = ToBeClassified;
         }
-        field(40;"Posted Seminar Reg. Nos";Code[20])
+        field(40;"Posted Seminar Reg. Nos.";Code[20])
         {
-            Caption = 'Posted Seminar Reg. Nos';
+            Caption = 'Posted Seminar Reg. Nos.';
             TableRelation = "No. Series";
             DataClassification = ToBeClassified;
         }

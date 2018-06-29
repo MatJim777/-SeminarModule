@@ -34,9 +34,9 @@ table 123456701 "CSD Seminar"
             DecimalPlaces = 0 : 1;
             DataClassification = ToBeClassified;
         }
-        field(40; "Minimum Paricipants"; Integer)
+        field(40; "Minimum Participants"; Integer)
         {
-            Caption = 'Minimum Paricipants';
+            Caption = 'Minimum Participants';
             DataClassification = ToBeClassified;
         }
         field(50; "Maximum Participants"; Integer)
@@ -73,15 +73,15 @@ table 123456701 "CSD Seminar"
             AutoFormatType = 1;
             DataClassification = ToBeClassified;
         }
-        field(110; "Gen.Prd. Posting Group"; code[10])
+        field(110; "Gen. Prod. Posting Group"; code[10])
         {
-            Caption = 'Gen.Prd. Posting Group';
+            Caption = 'Gen. Prod. Posting Group';
             TableRelation = "Gen. Product Posting Group";
             DataClassification = ToBeClassified;
             trigger OnValidate();
             begin
-                if (xRec."Gen.Prd. Posting Group" <> "Gen.Prd. Posting Group") then begin
-                    if GenProdPostingGroup.ValidateVatProdPostingGroup(GenProdPostingGroup, "Gen.Prd. Posting Group") then
+                if (xRec."Gen. Prod. Posting Group" <> "Gen. Prod. Posting Group") then begin
+                    if GenProdPostingGroup.ValidateVatProdPostingGroup(GenProdPostingGroup, "Gen. Prod. Posting Group") then
                         Validate("VAT. Prod. Posting Group", GenProdPostingGroup."Def. VAT Prod. Posting Group");
                 end;
             end;

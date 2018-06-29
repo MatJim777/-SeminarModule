@@ -29,7 +29,7 @@ page 123456702 "CSD Seminiar List"
                 {
 
                 }
-                field("Minimum Paricipants"; "Minimum Paricipants")
+                field("Minimum Participants"; "Minimum Participants")
                 {
 
                 }

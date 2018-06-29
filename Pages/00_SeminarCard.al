@@ -1,5 +1,6 @@
 page 123456701 "CSD Seminar Card"
 {
+    Caption = 'Seminar Card';
     PageType = Card;
     SourceTable = "CSD Seminar";
 
@@ -31,7 +32,7 @@ page 123456701 "CSD Seminar Card"
                 {
 
                 }
-                field("Minimum Participants"; "Minimum Paricipants")
+                field("Minimum Participants"; "Minimum Participants")
                 {
 
                 }
@@ -54,7 +55,7 @@ page 123456701 "CSD Seminar Card"
             {
                 Caption = 'Invoicing';
 
-                field("Gen.Prd. Posting Group"; "Gen.Prd. Posting Group")
+                field("Gen. Prod. Posting Group"; "Gen. Prod. Posting Group")
                 {
 
                 }
@@ -90,8 +91,8 @@ page 123456701 "CSD Seminar Card"
         {
             group("&Seminar"){ 
                 action("Co&mment") {
-                    //RunObject = page "Seminar Comment Sheet";
-                    //RunPageLink = "Table Name" = const(seminar, "No." =field("No."));
+                    RunObject = page "CSD Seminar Comment Sheet";
+                    //RunPageLink = "Table Name" = const(seminar), "No." =field("No."));
                     Image = Comment;
                     Promoted = true;
                     PromotedIsBig = true;

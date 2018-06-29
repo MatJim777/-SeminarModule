@@ -10,7 +10,7 @@ pageextension 123456700 "CSD Resource Card Extension" extends "Resource Card"
             {
 
             }
-            field("CSD Qunatity Per Day";"CSD Qunatity Per Day")
+            field("CSD Quantity Per Day";"CSD Quantity Per Day")
             {
 
             }
