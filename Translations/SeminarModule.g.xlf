@@ -3,6 +3,16 @@
   <file datatype="xml" source-language="en-US" original="SeminarModule">
     <body>
       <group id="body">
+        <trans-unit id="Codeunit 4082729148 - NamedType 250657857" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>cannot be a closing date.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4082729148 - NamedType 2229563192" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>is not within your range of allowed posting dates.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4209227845 - Control 1631617913 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Room</source>
           <note from="Developer" annotates="general" priority="2" />
