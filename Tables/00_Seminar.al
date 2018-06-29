@@ -90,7 +90,7 @@ table 123456701 "CSD Seminar"
         field(120; "VAT Prod. Posting Group"; code[10])
         {
             Caption = 'VAT Prod. Posting Group';
-            TableRelation ="CSD Seminar"."VAT Prod. Posting Group" ;
+            TableRelation = "VAT Product Posting Group";
             DataClassification = ToBeClassified;
         }
         field(130; "No.Series"; code[10])
