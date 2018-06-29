@@ -3,8 +3,8 @@ table 123456704 "CSD Seminar Comment Line"
 {
     Caption = 'Seminar Comment Line';
     DataClassification = ToBeClassified;
-    LookupPageId = "CSD Seminar Comment List";
-    DrillDownPageId = "CSD Seminar Comment List";
+    LookupPageId = "CSD Seminar List";
+    DrillDownPageId = "CSD Seminar List";
 
     fields
     {
