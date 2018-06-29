@@ -17,7 +17,6 @@ table 123456710 "CSD Seminar Reg. Header"
                 if "No." <> xRec."No." then begin
                     SeminarSetup.Get;
                     NoSeriesMgt.TestManual(SeminarSetup."Seminar Registration Nos.");
-                    "No. Series" := '';
                 end;
             end;
         }
@@ -191,8 +190,8 @@ table 123456710 "CSD Seminar Reg. Header"
                              SeminarRegLine.TableCaption)
                         then begin
                             repeat
-                            SeminarRegLine.VALIDATE("Seminar Price", "Seminar Price");
-                            SeminarRegLine.modify;
+                                SeminarRegLine.VALIDATE("Seminar Price", "Seminar Price");
+                                SeminarRegLine.modify;
                             until SeminarRegLine.NEXT = 0;
                             modify;
                         end;
@@ -295,8 +294,8 @@ table 123456710 "CSD Seminar Reg. Header"
 
     trigger OnDelete();
     begin
-        if (CurrFieldNo>0) then
-            TestField(Status,Status::Canceled);
+        if(CurrFieldNo > 0) then
+            TestField(Status, Status::Canceled);
         SeminarRegLine.RESET;
         SeminarRegLine.SETRANGE("Document No.", "No.");
         SeminarRegLine.SETRANGE(Registered, true);

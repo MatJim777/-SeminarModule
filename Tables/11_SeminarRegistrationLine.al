@@ -26,7 +26,7 @@ table 123456711 "CSD Seminar Registration Line"
                     ERROR(RegisteredErrorTxt,
                       FieldCaption("Bill-to Customer No."),
                       FieldCaption(Registered),
-                      Registered);
+Registered);
                   end;
                 end;
             end;
