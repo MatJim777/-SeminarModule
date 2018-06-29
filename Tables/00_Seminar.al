@@ -1,6 +1,7 @@
 table 123456701 "CSD Seminar"
 //CSD 1.00 20180628 MJJ
-{
+{   
+    Caption = 'Seminar';
     DataClassification = ToBeClassified;
 
     fields
@@ -82,14 +83,14 @@ table 123456701 "CSD Seminar"
             begin
                 if (xRec."Gen. Prod. Posting Group" <> "Gen. Prod. Posting Group") then begin
                     if GenProdPostingGroup.ValidateVatProdPostingGroup(GenProdPostingGroup, "Gen. Prod. Posting Group") then
-                        Validate("VAT. Prod. Posting Group", GenProdPostingGroup."Def. VAT Prod. Posting Group");
+                        Validate("VAT Prod. Posting Group", GenProdPostingGroup."Def. VAT Prod. Posting Group");
                 end;
             end;
         }
-        field(120; "VAT. Prod. Posting Group"; code[10])
+        field(120; "VAT Prod. Posting Group"; code[10])
         {
-            Caption = 'VAT. Prod. Posting Group';
-            TableRelation = "VAT Product Posting Group";
+            Caption = 'VAT Prod. Posting Group';
+            TableRelation ="CSD Seminar"."VAT Prod. Posting Group" ;
             DataClassification = ToBeClassified;
         }
         field(130; "No.Series"; code[10])
