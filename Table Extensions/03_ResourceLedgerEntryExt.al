@@ -1,4 +1,4 @@
-tableextension 123465703 ResourceLedgerEntryExt extends "Res. Ledger Entry"
+tableextension 123456703 ResourceLedgerEntryExt extends "Res. Ledger Entry"
 // CSD1.00 - 2018-06-29 - MJJ
 // Chapter 7 - Lab 4-1
 {
