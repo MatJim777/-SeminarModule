@@ -1,12 +1,13 @@
 page 123456722 "CSD Seminar Register"
+// CSD1.00 - 20180629 -MJJ
+// Chapter 7 - Lab 2-11
 {
     Caption = 'Seminar Register';
     PageType = List;
     SourceTable = "CSD Seminar Register";
     Editable = false;
     
-    var
-        SeminarReghowLedger:Codeunit "CSD Seminar Reg.- Show Ledger";
+   
     layout
     {
         area(content)
@@ -37,6 +38,12 @@ page 123456722 "CSD Seminar Register"
         }
         area(factboxes)
         {
+            Systempart(Link;Links){
+
+            }
+            systempart(Notes;Notes){
+
+            }
         }
     }
 
@@ -54,6 +61,7 @@ page 123456722 "CSD Seminar Register"
             action("Seminar Ledgers")
             { 
                 image = Warrantyledger;
+                RunObject = codeunit "CSD Seminar Reg.- Show Ledger";
                 trigger OnAction();
                 begin
                     
@@ -61,4 +69,6 @@ page 123456722 "CSD Seminar Register"
             }
         }
     }
+     var
+        SeminarReghowLedger : Codeunit "CSD Seminar Reg.- Show Ledger";
 }
